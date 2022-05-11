@@ -1,5 +1,13 @@
 {
   "Address": ":8000",
+  "Status": {
+    "Name": "Standby",
+    "Duration": {
+      "Elapsed": 0,
+      "Total": 0,
+      "Remaining": 0
+    }
+  },
   "Mode": "unknown",
   "Players": [],
   "SpectatorNames": [
