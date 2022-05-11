@@ -1,0 +1,9 @@
+{
+  "Address": ":8003",
+  "Version": "foo v1.2",
+  "Clients": [],
+  "Settings": {
+    "*version": "foo v1.2",
+    "hostname": "foo.bar"
+  }
+}

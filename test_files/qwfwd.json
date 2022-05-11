@@ -1,0 +1,9 @@
+{
+  "Address": ":8002",
+  "ClientNames": [],
+  "Settings": {
+    "*version": "qwfwd 1.2",
+    "hostname": "qw.foppa.dk - qwfwd",
+    "maxclients": "128"
+  }
+}

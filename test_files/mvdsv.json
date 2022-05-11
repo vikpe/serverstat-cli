@@ -1,0 +1,14 @@
+{
+  "Address": ":8000",
+  "Mode": "unknown",
+  "Players": [],
+  "SpectatorNames": [
+    "[ServeMe]"
+  ],
+  "Settings": {
+    "*version": "MVDSV 0.35-dev",
+    "maxfps": "77",
+    "pm_ktjump": "1"
+  },
+  "QtvStream": ""
+}

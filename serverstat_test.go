@@ -69,7 +69,7 @@ func TestGetInfo(t *testing.T) {
 		assert.Contains(t, output, "ERROR:")
 	})
 
-	t.Run("Success", func(t *testing.T) {
+	t.Run("MVDSV", func(t *testing.T) {
 		go func() {
 			responseHeader := string([]byte{0xff, 0xff, 0xff, 0xff, 'n', '\\'})
 			responseBody := `\maxfps\77\pm_ktjump\1\*version\MVDSV 0.35-dev
@@ -79,7 +79,49 @@ func TestGetInfo(t *testing.T) {
 		time.Sleep(10 * time.Millisecond)
 
 		outputAsJson := app.run(":8000")
-		expectedOutput := jsonFileToString("./test_files/expected_output.json")
+		expectedOutput := jsonFileToString("./test_files/mvdsv.json")
+
+		assert.Equal(t, expectedOutput, outputAsJson)
+	})
+
+	t.Run("QTV", func(t *testing.T) {
+		go func() {
+			responseHeader := string([]byte{0xff, 0xff, 0xff, 0xff, 'n', '\\'})
+			responseBody := `\*version\QTV 1.12-rc1\hostname\qw.foppa.dk - qtv\maxclients\100`
+			udphelper.New(":8001").Respond([]byte((responseHeader + responseBody)))
+		}()
+		time.Sleep(10 * time.Millisecond)
+
+		outputAsJson := app.run(":8001")
+		expectedOutput := jsonFileToString("./test_files/qtv.json")
+
+		assert.Equal(t, expectedOutput, outputAsJson)
+	})
+
+	t.Run("QWFWD", func(t *testing.T) {
+		go func() {
+			responseHeader := string([]byte{0xff, 0xff, 0xff, 0xff, 'n', '\\'})
+			responseBody := `\*version\qwfwd 1.2\maxclients\128\hostname\qw.foppa.dk - qwfwd`
+			udphelper.New(":8002").Respond([]byte((responseHeader + responseBody)))
+		}()
+		time.Sleep(10 * time.Millisecond)
+
+		outputAsJson := app.run(":8002")
+		expectedOutput := jsonFileToString("./test_files/qwfwd.json")
+
+		assert.Equal(t, expectedOutput, outputAsJson)
+	})
+
+	t.Run("Unknown", func(t *testing.T) {
+		go func() {
+			responseHeader := string([]byte{0xff, 0xff, 0xff, 0xff, 'n', '\\'})
+			responseBody := `\*version\foo v1.2\hostname\foo.bar`
+			udphelper.New(":8003").Respond([]byte((responseHeader + responseBody)))
+		}()
+		time.Sleep(10 * time.Millisecond)
+
+		outputAsJson := app.run(":8003")
+		expectedOutput := jsonFileToString("./test_files/unknown.json")
 
 		assert.Equal(t, expectedOutput, outputAsJson)
 	})

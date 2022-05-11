@@ -1,0 +1,9 @@
+{
+  "Address": ":8001",
+  "SpectatorNames": [],
+  "Settings": {
+    "*version": "QTV 1.12-rc1",
+    "hostname": "qw.foppa.dk - qtv",
+    "maxclients": "100"
+  }
+}

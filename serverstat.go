@@ -34,7 +34,7 @@ Example:   {{.Name}} qw.foppa.dk:27501
 				return err
 			}
 
-			fmt.Println(GenericServerToJson(genericServer))
+			fmt.Println(genericServerToJson(genericServer))
 			return nil
 		},
 	}
@@ -52,7 +52,7 @@ Example:   {{.Name}} qw.foppa.dk:27501
 	return 0
 }
 
-func GenericServerToJson(genericServer qserver.GenericServer) string {
+func genericServerToJson(genericServer qserver.GenericServer) string {
 	serverToJson := func(v any) string {
 		prefix := ""
 		indent := "  "
