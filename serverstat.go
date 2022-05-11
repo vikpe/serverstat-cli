@@ -7,6 +7,10 @@ import (
 
 	"github.com/urfave/cli/v2"
 	"github.com/vikpe/serverstat"
+	"github.com/vikpe/serverstat/qserver"
+	"github.com/vikpe/serverstat/qserver/mvdsv"
+	"github.com/vikpe/serverstat/qserver/proxy"
+	"github.com/vikpe/serverstat/qserver/qtv"
 )
 
 func run(args []string) int {
@@ -24,14 +28,13 @@ Example:   {{.Name}} qw.foppa.dk:27501
 		Version:     "__VERSION__", // updated during build workflow
 		Action: func(c *cli.Context) error {
 			serverAddress := c.Args().First()
-			serverInfo, err := serverstat.GetInfo(serverAddress)
+			genericServer, err := serverstat.GetInfo(serverAddress)
 
 			if err != nil {
 				return err
 			}
 
-			serverInfoAsJson, _ := json.MarshalIndent(serverInfo, "", "  ")
-			fmt.Println(string(serverInfoAsJson))
+			fmt.Println(GenericServerToJson(genericServer))
 			return nil
 		},
 	}
@@ -47,6 +50,25 @@ Example:   {{.Name}} qw.foppa.dk:27501
 	}
 
 	return 0
+}
+
+func GenericServerToJson(genericServer qserver.GenericServer) string {
+	serverToJson := func(v any) string {
+		prefix := ""
+		indent := "  "
+		jsonBytes, _ := json.MarshalIndent(v, prefix, indent)
+		return string(jsonBytes)
+	}
+
+	if genericServer.Version.IsMvdsv() {
+		return serverToJson(mvdsv.Parse(genericServer))
+	} else if genericServer.Version.IsQtv() {
+		return serverToJson(qtv.Parse(genericServer))
+	} else if genericServer.Version.IsProxy() {
+		return serverToJson(proxy.Parse(genericServer))
+	} else {
+		return serverToJson(genericServer)
+	}
 }
 
 func main() {
