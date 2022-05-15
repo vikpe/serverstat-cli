@@ -8,9 +8,7 @@ import (
 	"github.com/urfave/cli/v2"
 	"github.com/vikpe/serverstat"
 	"github.com/vikpe/serverstat/qserver"
-	"github.com/vikpe/serverstat/qserver/mvdsv"
-	"github.com/vikpe/serverstat/qserver/qtv"
-	"github.com/vikpe/serverstat/qserver/qwfwd"
+	"github.com/vikpe/serverstat/qserver/convert"
 )
 
 func run(args []string) int {
@@ -61,11 +59,11 @@ func genericServerToJson(genericServer qserver.GenericServer) string {
 	}
 
 	if genericServer.Version.IsMvdsv() {
-		return serverToJson(mvdsv.Parse(genericServer))
+		return serverToJson(convert.ToMvdsv(genericServer))
 	} else if genericServer.Version.IsQtv() {
-		return serverToJson(qtv.Parse(genericServer))
+		return serverToJson(convert.ToQtv(genericServer))
 	} else if genericServer.Version.IsQwfwd() {
-		return serverToJson(qwfwd.Parse(genericServer))
+		return serverToJson(convert.ToQwfwd(genericServer))
 	} else {
 		return serverToJson(genericServer)
 	}
