@@ -9,8 +9,8 @@ import (
 	"github.com/vikpe/serverstat"
 	"github.com/vikpe/serverstat/qserver"
 	"github.com/vikpe/serverstat/qserver/mvdsv"
-	"github.com/vikpe/serverstat/qserver/proxy"
 	"github.com/vikpe/serverstat/qserver/qtv"
+	"github.com/vikpe/serverstat/qserver/qwfwd"
 )
 
 func run(args []string) int {
@@ -64,8 +64,8 @@ func genericServerToJson(genericServer qserver.GenericServer) string {
 		return serverToJson(mvdsv.Parse(genericServer))
 	} else if genericServer.Version.IsQtv() {
 		return serverToJson(qtv.Parse(genericServer))
-	} else if genericServer.Version.IsProxy() {
-		return serverToJson(proxy.Parse(genericServer))
+	} else if genericServer.Version.IsQwfwd() {
+		return serverToJson(qwfwd.Parse(genericServer))
 	} else {
 		return serverToJson(genericServer)
 	}
