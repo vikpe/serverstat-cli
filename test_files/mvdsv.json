@@ -1,5 +1,7 @@
 {
   "Address": ":8000",
+  "Type": "mvdsv",
+  "Mode": "unknown",
   "Status": {
     "Name": "Standby",
     "Duration": {
@@ -8,7 +10,7 @@
       "Remaining": 0
     }
   },
-  "Mode": "unknown",
+  "Title": "hehe",
   "Players": [],
   "SpectatorNames": [
     "[ServeMe]"
