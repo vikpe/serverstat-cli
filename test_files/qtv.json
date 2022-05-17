@@ -1,6 +1,6 @@
 {
-  "Address": ":8001",
   "Type": "qtv",
+  "Address": ":8001",
   "SpectatorNames": [],
   "Settings": {
     "*version": "QTV 1.12-rc1",
