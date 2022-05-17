@@ -9,6 +9,7 @@ import (
 	"github.com/vikpe/serverstat"
 	"github.com/vikpe/serverstat/qserver"
 	"github.com/vikpe/serverstat/qserver/convert"
+	"github.com/vikpe/serverstat/qserver/mvdsv"
 )
 
 func run(args []string) int {
@@ -59,7 +60,7 @@ func genericServerToJson(genericServer qserver.GenericServer) string {
 	}
 
 	if genericServer.Version.IsMvdsv() {
-		return serverToJson(convert.ToMvdsv(genericServer))
+		return serverToJson(mvdsv.Export(convert.ToMvdsv(genericServer)))
 	} else if genericServer.Version.IsQtv() {
 		return serverToJson(convert.ToQtv(genericServer))
 	} else if genericServer.Version.IsQwfwd() {

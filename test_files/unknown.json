@@ -5,5 +5,8 @@
   "Settings": {
     "*version": "foo v1.2",
     "hostname": "foo.bar"
+  },
+  "ExtraInfo": {
+    "QtvStream": ""
   }
 }

@@ -1,21 +1,33 @@
 {
   "Address": ":8000",
-  "Status": {
-    "Name": "Standby",
-    "Duration": {
-      "Elapsed": 0,
-      "Total": 0,
-      "Remaining": 0
-    }
-  },
   "Mode": "unknown",
+  "Title": "unknown []",
+  "Status": "Unknown",
+  "Time": {
+    "Elapsed": 0,
+    "Total": 0,
+    "Remaining": 0
+  },
+  "PlayerSlots": {
+    "Used": 0,
+    "Total": 8,
+    "Free": 8
+  },
   "Players": [],
+  "Teams": [],
+  "SpectatorSlots": {
+    "Used": 1,
+    "Total": 4,
+    "Free": 3
+  },
   "SpectatorNames": [
     "[ServeMe]"
   ],
   "Settings": {
     "*version": "MVDSV 0.35-dev",
+    "maxclients": "8",
     "maxfps": "77",
+    "maxspectators": "4",
     "pm_ktjump": "1"
   },
   "QtvStream": ""
