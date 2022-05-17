@@ -1,9 +1,9 @@
 {
   "Type": "mvdsv",
   "Address": ":8000",
-  "Mode": "unknown",
-  "Title": "unknown []",
-  "Status": "Unknown",
+  "Mode": "ffa",
+  "Title": "ffa [dm2]",
+  "Status": "Standby",
   "Time": {
     "Elapsed": 0,
     "Total": 0,
@@ -25,11 +25,14 @@
     "[ServeMe]"
   ],
   "Settings": {
+    "*gamedir": "qw",
     "*version": "MVDSV 0.35-dev",
+    "map": "dm2",
     "maxclients": "8",
     "maxfps": "77",
     "maxspectators": "4",
-    "pm_ktjump": "1"
+    "pm_ktjump": "1",
+    "status": "Standby"
   },
   "QtvStream": ""
 }

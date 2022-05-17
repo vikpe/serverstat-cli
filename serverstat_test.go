@@ -72,7 +72,7 @@ func TestGetInfo(t *testing.T) {
 	t.Run("MVDSV", func(t *testing.T) {
 		go func() {
 			responseHeader := string([]byte{0xff, 0xff, 0xff, 0xff, 'n', '\\'})
-			responseBody := `\maxfps\77\pm_ktjump\1\*version\MVDSV 0.35-dev\maxclients\8\maxspectators\4
+			responseBody := `\status\Standby\*gamedir\qw\map\dm2\maxfps\77\pm_ktjump\1\*version\MVDSV 0.35-dev\maxclients\8\maxspectators\4
 65 -9999 16 -666 "\s\[ServeMe]" "" 12 11 "lqwc" ""`
 			udphelper.New(":8000").Respond([]byte((responseHeader + responseBody)))
 		}()
