@@ -1,5 +1,6 @@
 {
   "Address": ":8002",
+  "Type": "qwfwd",
   "ClientNames": [],
   "Settings": {
     "*version": "qwfwd 1.2",
