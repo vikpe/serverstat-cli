@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/stretchr/testify v1.7.1
 	github.com/urfave/cli/v2 v2.5.1
-	github.com/vikpe/serverstat v0.1.17
+	github.com/vikpe/serverstat v0.1.18
 	github.com/vikpe/udphelper v0.1.3
 )
 
