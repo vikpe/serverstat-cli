@@ -7,6 +7,11 @@
     "hostname": "foo.bar"
   },
   "ExtraInfo": {
-    "QtvStream": ""
+    "QtvStream": "",
+    "Geo": {
+      "CC": "",
+      "Country": "",
+      "Region": ""
+    }
   }
 }

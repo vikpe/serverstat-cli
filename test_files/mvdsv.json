@@ -34,5 +34,10 @@
     "pm_ktjump": "1",
     "status": "Standby"
   },
-  "QtvStream": ""
+  "QtvStream": "",
+  "Geo": {
+    "CC": "",
+    "Country": "",
+    "Region": ""
+  }
 }

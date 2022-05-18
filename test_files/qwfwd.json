@@ -6,5 +6,10 @@
     "*version": "qwfwd 1.2",
     "hostname": "qw.foppa.dk - qwfwd",
     "maxclients": "128"
+  },
+  "Geo": {
+    "CC": "",
+    "Country": "",
+    "Region": ""
   }
 }
