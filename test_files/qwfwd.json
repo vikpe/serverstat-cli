@@ -1,5 +1,4 @@
 {
-  "Type": "qwfwd",
   "Address": ":8002",
   "ClientNames": [],
   "Settings": {
@@ -11,5 +10,6 @@
     "CC": "",
     "Country": "",
     "Region": ""
-  }
+  },
+  "Type": "qwfwd"
 }

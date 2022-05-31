@@ -1,5 +1,4 @@
 {
-  "Type": "mvdsv",
   "Address": ":8000",
   "Mode": "ffa",
   "Title": "ffa [dm2]",
@@ -40,11 +39,12 @@
     "Id": 0,
     "Address": "",
     "SpectatorNames": [],
-    "NumSpectators": 0
+    "SpectatorCount": 0
   },
   "Geo": {
     "CC": "",
     "Country": "",
     "Region": ""
-  }
+  },
+  "Type": "mvdsv"
 }

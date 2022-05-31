@@ -1,5 +1,4 @@
 {
-  "Type": "qtv",
   "Address": ":8001",
   "SpectatorNames": [],
   "Settings": {
@@ -11,5 +10,6 @@
     "CC": "",
     "Country": "",
     "Region": ""
-  }
+  },
+  "Type": "qtv"
 }

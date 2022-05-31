@@ -81,7 +81,7 @@ func TestGetInfo(t *testing.T) {
 		outputAsJson := app.run(":8000")
 		expectedOutput := jsonFileToString("./test_files/mvdsv.json")
 
-		assert.Equal(t, expectedOutput, outputAsJson)
+		assert.JSONEq(t, expectedOutput, outputAsJson)
 	})
 
 	t.Run("QTV", func(t *testing.T) {
@@ -95,7 +95,7 @@ func TestGetInfo(t *testing.T) {
 		outputAsJson := app.run(":8001")
 		expectedOutput := jsonFileToString("./test_files/qtv.json")
 
-		assert.Equal(t, expectedOutput, outputAsJson)
+		assert.JSONEq(t, expectedOutput, outputAsJson)
 	})
 
 	t.Run("QWFWD", func(t *testing.T) {
@@ -109,7 +109,7 @@ func TestGetInfo(t *testing.T) {
 		outputAsJson := app.run(":8002")
 		expectedOutput := jsonFileToString("./test_files/qwfwd.json")
 
-		assert.Equal(t, expectedOutput, outputAsJson)
+		assert.JSONEq(t, expectedOutput, outputAsJson)
 	})
 
 	t.Run("Unknown", func(t *testing.T) {
@@ -123,7 +123,7 @@ func TestGetInfo(t *testing.T) {
 		outputAsJson := app.run(":8003")
 		expectedOutput := jsonFileToString("./test_files/unknown.json")
 
-		assert.Equal(t, expectedOutput, outputAsJson)
+		assert.JSONEq(t, expectedOutput, outputAsJson)
 	})
 }
 

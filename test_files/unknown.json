@@ -12,13 +12,14 @@
       "Url": "",
       "Id": 0,
       "Address": "",
-      "SpectatorNames": [],
-      "NumSpectators": 0
+      "SpectatorNames": null,
+      "SpectatorCount": 0
     },
     "Geo": {
       "CC": "",
       "Country": "",
       "Region": ""
     }
-  }
+  },
+  "Type": "unknown"
 }
