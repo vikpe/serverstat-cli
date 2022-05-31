@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/stretchr/testify v1.7.1
 	github.com/urfave/cli/v2 v2.5.1
-	github.com/vikpe/serverstat v0.1.41
+	github.com/vikpe/serverstat v0.1.42
 	github.com/vikpe/udphelper v0.1.3
 )
 
@@ -21,5 +21,3 @@ require (
 	golang.org/x/exp v0.0.0-20220518171630-0b5c67f07fdf // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/vikpe/serverstat => ../serverstat
