@@ -4,12 +4,18 @@
   "Settings": {
     "*version": "QTV 1.12-rc1",
     "hostname": "qw.foppa.dk - qtv",
+    "hostname_parsed": "qw.foppa.dk:8001",
     "maxclients": "100"
   },
   "Geo": {
     "CC": "",
     "Country": "",
-    "Region": ""
+    "Region": "",
+    "City": "",
+    "Coordinates": [
+      0,
+      0
+    ]
   },
   "Type": "qtv"
 }

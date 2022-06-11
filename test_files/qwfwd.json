@@ -4,12 +4,18 @@
   "Settings": {
     "*version": "qwfwd 1.2",
     "hostname": "qw.foppa.dk - qwfwd",
+    "hostname_parsed": "qw.foppa.dk:8002",
     "maxclients": "128"
   },
   "Geo": {
     "CC": "",
     "Country": "",
-    "Region": ""
+    "Region": "",
+    "City": "",
+    "Coordinates": [
+      0,
+      0
+    ]
   },
   "Type": "qwfwd"
 }

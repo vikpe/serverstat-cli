@@ -44,7 +44,12 @@
   "Geo": {
     "CC": "",
     "Country": "",
-    "Region": ""
+    "Region": "",
+    "City": "",
+    "Coordinates": [
+      0,
+      0
+    ]
   },
   "Type": "mvdsv"
 }

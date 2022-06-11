@@ -4,7 +4,18 @@
   "Clients": [],
   "Settings": {
     "*version": "foo v1.2",
-    "hostname": "foo.bar"
+    "hostname": "foo.bar",
+    "hostname_parsed": "foo.bar:8003"
+  },
+  "Geo": {
+    "CC": "",
+    "Country": "",
+    "Region": "",
+    "City": "",
+    "Coordinates": [
+      0,
+      0
+    ]
   },
   "ExtraInfo": {
     "QtvStream": {
@@ -14,11 +25,6 @@
       "Address": "",
       "SpectatorNames": null,
       "SpectatorCount": 0
-    },
-    "Geo": {
-      "CC": "",
-      "Country": "",
-      "Region": ""
     }
   },
   "Type": "unknown"
