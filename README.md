@@ -1,4 +1,4 @@
-# serverstat-cli [![build](https://github.com/vikpe/serverstat-cli/actions/workflows/test.yml/badge.svg)](https://github.com/vikpe/serverstat-cli/actions/workflows/build.yml)  [![codecov](https://codecov.io/gh/vikpe/serverstat-cli/branch/main/graph/badge.svg)](https://codecov.io/gh/vikpe/serverstat-cli) [![Go Report Card](https://goreportcard.com/badge/github.com/vikpe/serverstat-cli)](https://goreportcard.com/report/github.com/vikpe/serverstat-cli)
+# serverstat-cli [![build](https://github.com/vikpe/serverstat-cli/actions/workflows/build.yml/badge.svg)](https://github.com/vikpe/serverstat-cli/actions/workflows/build.yml)  [![codecov](https://codecov.io/gh/vikpe/serverstat-cli/branch/main/graph/badge.svg)](https://codecov.io/gh/vikpe/serverstat-cli) [![Go Report Card](https://goreportcard.com/badge/github.com/vikpe/serverstat-cli)](https://goreportcard.com/report/github.com/vikpe/serverstat-cli)
 
 ```shell
 Get info from QuakeWorld servers.
