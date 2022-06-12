@@ -1,31 +1,31 @@
 {
-  "Address": ":8003",
-  "Version": "foo v1.2",
-  "Clients": [],
-  "Settings": {
+  "address": ":8003",
+  "version": "foo v1.2",
+  "clients": [],
+  "settings": {
     "*version": "foo v1.2",
     "hostname": "foo.bar",
     "hostname_parsed": "foo.bar:8003"
   },
-  "Geo": {
-    "CC": "",
-    "Country": "",
-    "Region": "",
-    "City": "",
-    "Coordinates": [
+  "geo": {
+    "cc": "",
+    "country": "",
+    "region": "",
+    "city": "",
+    "coordinates": [
       0,
       0
     ]
   },
-  "ExtraInfo": {
-    "QtvStream": {
-      "Title": "",
-      "Url": "",
-      "Id": 0,
-      "Address": "",
-      "SpectatorNames": null,
-      "SpectatorCount": 0
+  "extra_info": {
+    "qtv_stream": {
+      "title": "",
+      "url": "",
+      "id": 0,
+      "address": "",
+      "spectator_names": [],
+      "spectator_count": 0
     }
   },
-  "Type": "unknown"
+  "type": "unknown"
 }

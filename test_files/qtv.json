@@ -1,21 +1,21 @@
 {
-  "Address": ":8001",
-  "SpectatorNames": [],
-  "Settings": {
+  "address": ":8001",
+  "spectator_names": [],
+  "settings": {
     "*version": "QTV 1.12-rc1",
     "hostname": "qw.foppa.dk - qtv",
     "hostname_parsed": "qw.foppa.dk:8001",
     "maxclients": "100"
   },
-  "Geo": {
-    "CC": "",
-    "Country": "",
-    "Region": "",
-    "City": "",
-    "Coordinates": [
+  "geo": {
+    "cc": "",
+    "country": "",
+    "region": "",
+    "city": "",
+    "coordinates": [
       0,
       0
     ]
   },
-  "Type": "qtv"
+  "type": "qtv"
 }

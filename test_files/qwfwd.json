@@ -1,21 +1,21 @@
 {
-  "Address": ":8002",
-  "ClientNames": [],
-  "Settings": {
+  "address": ":8002",
+  "client_names": [],
+  "settings": {
     "*version": "qwfwd 1.2",
     "hostname": "qw.foppa.dk - qwfwd",
     "hostname_parsed": "qw.foppa.dk:8002",
     "maxclients": "128"
   },
-  "Geo": {
-    "CC": "",
-    "Country": "",
-    "Region": "",
-    "City": "",
-    "Coordinates": [
+  "geo": {
+    "cc": "",
+    "country": "",
+    "region": "",
+    "city": "",
+    "coordinates": [
       0,
       0
     ]
   },
-  "Type": "qwfwd"
+  "type": "qwfwd"
 }

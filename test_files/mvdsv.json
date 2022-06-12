@@ -1,29 +1,29 @@
 {
-  "Address": ":8000",
-  "Mode": "ffa",
-  "Title": "ffa [dm2]",
-  "Status": "Standby",
-  "Time": {
-    "Elapsed": 0,
-    "Total": 0,
-    "Remaining": 0
+  "address": ":8000",
+  "mode": "ffa",
+  "title": "ffa [dm2]",
+  "status": "Standby",
+  "time": {
+    "elapsed": 0,
+    "total": 0,
+    "remaining": 0
   },
-  "PlayerSlots": {
-    "Used": 0,
-    "Total": 8,
-    "Free": 8
+  "player_slots": {
+    "used": 0,
+    "total": 8,
+    "free": 8
   },
-  "Players": [],
-  "Teams": [],
-  "SpectatorSlots": {
-    "Used": 1,
-    "Total": 4,
-    "Free": 3
+  "players": [],
+  "teams": [],
+  "spectator_slots": {
+    "used": 1,
+    "total": 4,
+    "free": 3
   },
-  "SpectatorNames": [
+  "spectator_names": [
     "[ServeMe]"
   ],
-  "Settings": {
+  "settings": {
     "*gamedir": "qw",
     "*version": "MVDSV 0.35-dev",
     "map": "dm2",
@@ -33,23 +33,23 @@
     "pm_ktjump": "1",
     "status": "Standby"
   },
-  "QtvStream": {
-    "Title": "",
-    "Url": "",
-    "Id": 0,
-    "Address": "",
-    "SpectatorNames": [],
-    "SpectatorCount": 0
+  "qtv_stream": {
+    "title": "",
+    "url": "",
+    "id": 0,
+    "address": "",
+    "spectator_names": [],
+    "spectator_count": 0
   },
-  "Geo": {
-    "CC": "",
-    "Country": "",
-    "Region": "",
-    "City": "",
-    "Coordinates": [
+  "geo": {
+    "cc": "",
+    "country": "",
+    "region": "",
+    "city": "",
+    "coordinates": [
       0,
       0
     ]
   },
-  "Type": "mvdsv"
+  "type": "mvdsv"
 }
