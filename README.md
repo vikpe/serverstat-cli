@@ -7,115 +7,236 @@ Get info from QuakeWorld servers.
 Example:   serverstat qw.foppa.dk:27501
 ```
 
+## Download
+
+See [releases](https://github.com/vikpe/serverstat-cli/releases) for downloads.
+
 ## Example response
+
 ```json
 {
-  "Address": "91.206.14.17:27503",
-  "Mode": "1on1",
-  "Title": "1on1: KoLoB vs Zepp [dm4]",
-  "Status": "Started",
-  "Time": {
-    "Elapsed": 4,
-    "Total": 10,
-    "Remaining": 6
+  "address": "qw.irc.ax:28503",
+  "mode": "2on2",
+  "title": "2on2: 1 (HoLy., NinJaA) vs oeks (nig, trl) [dm4]",
+  "status": "Started",
+  "time": {
+    "elapsed": 2,
+    "total": 10,
+    "remaining": 8
   },
-  "PlayerSlots": {
-    "Used": 2,
-    "Total": 2,
-    "Free": 0
+  "player_slots": {
+    "used": 4,
+    "total": 4,
+    "free": 0
   },
-  "Players": [
+  "players": [
     {
-      "Name": "Zepp",
-      "NameColor": "wwww",
-      "Team": "1",
-      "TeamColor": "w",
-      "Skin": "",
-      "Colors": [
-        12,
-        12
+      "name": "HoLy.",
+      "name_color": "wwwww",
+      "team": "1",
+      "team_color": "w",
+      "skin": "",
+      "colors": [
+        4,
+        4
       ],
-      "Frags": 40,
-      "Ping": 25,
-      "Time": 5,
-      "CC": "",
-      "IsBot": false
+      "frags": 18,
+      "ping": 25,
+      "time": 4,
+      "cc": "",
+      "is_bot": false
     },
     {
-      "Name": "KoLoB",
-      "NameColor": "wwwww",
-      "Team": "blue",
-      "TeamColor": "wwww",
-      "Skin": "",
-      "Colors": [
-        13,
-        13
+      "name": "NinJaA",
+      "name_color": "wwwwww",
+      "team": "1",
+      "team_color": "w",
+      "skin": "",
+      "colors": [
+        4,
+        4
       ],
-      "Frags": 1,
-      "Ping": 25,
-      "Time": 5,
-      "CC": "",
-      "IsBot": false
+      "frags": 10,
+      "ping": 42,
+      "time": 4,
+      "cc": "",
+      "is_bot": false
+    },
+    {
+      "name": "trl.........axe",
+      "name_color": "wwwwwwwwwwwwbbb",
+      "team": "oeks",
+      "team_color": "wwww",
+      "skin": "oeks_trl",
+      "colors": [
+        0,
+        0
+      ],
+      "frags": 18,
+      "ping": 13,
+      "time": 4,
+      "cc": "",
+      "is_bot": false
+    },
+    {
+      "name": "nig.........axe",
+      "name_color": "wwwwwwwwwwwwbbb",
+      "team": "oeks",
+      "team_color": "wwww",
+      "skin": "oeks_nig",
+      "colors": [
+        0,
+        1
+      ],
+      "frags": 8,
+      "ping": 12,
+      "time": 4,
+      "cc": "",
+      "is_bot": false
     }
   ],
-  "Teams": [],
-  "SpectatorSlots": {
-    "Used": 3,
-    "Total": 10,
-    "Free": 7
-  },
-  "SpectatorNames": [
-    "NL",
-    "player",
-    "[ServeMe]"
+  "teams": [
+    {
+      "name": "1",
+      "name_color": "w",
+      "frags": 28,
+      "colors": [
+        4,
+        4
+      ],
+      "players": [
+        {
+          "name": "HoLy.",
+          "name_color": "wwwww",
+          "team": "1",
+          "team_color": "w",
+          "skin": "",
+          "colors": [
+            4,
+            4
+          ],
+          "frags": 18,
+          "ping": 25,
+          "time": 4,
+          "cc": "",
+          "is_bot": false
+        },
+        {
+          "name": "NinJaA",
+          "name_color": "wwwwww",
+          "team": "1",
+          "team_color": "w",
+          "skin": "",
+          "colors": [
+            4,
+            4
+          ],
+          "frags": 10,
+          "ping": 42,
+          "time": 4,
+          "cc": "",
+          "is_bot": false
+        }
+      ]
+    },
+    {
+      "name": "oeks",
+      "name_color": "wwww",
+      "frags": 26,
+      "colors": [
+        0,
+        0
+      ],
+      "players": [
+        {
+          "name": "trl.........axe",
+          "name_color": "wwwwwwwwwwwwbbb",
+          "team": "oeks",
+          "team_color": "wwww",
+          "skin": "oeks_trl",
+          "colors": [
+            0,
+            0
+          ],
+          "frags": 18,
+          "ping": 13,
+          "time": 4,
+          "cc": "",
+          "is_bot": false
+        },
+        {
+          "name": "nig.........axe",
+          "name_color": "wwwwwwwwwwwwbbb",
+          "team": "oeks",
+          "team_color": "wwww",
+          "skin": "oeks_nig",
+          "colors": [
+            0,
+            1
+          ],
+          "frags": 8,
+          "ping": 12,
+          "time": 4,
+          "cc": "",
+          "is_bot": false
+        }
+      ]
+    }
   ],
-  "Settings": {
-    "*admin": "glad@quakeworld.ru",
+  "spectator_slots": {
+    "used": 3,
+    "total": 6,
+    "free": 3
+  },
+  "spectator_names": [
+    "[ServeMe]",
+    "bass",
+    "myz"
+  ],
+  "settings": {
+    "*admin": "suom1 \u003csuom1@irc.ax\u003e",
     "*gamedir": "qw",
     "*progs": "so",
     "*qvm": "so",
     "*version": "MVDSV 0.35-dev",
     "*z_ext": "511",
     "deathmatch": "3",
-    "fpd": "222",
-    "hostname": "Gladius SPB KTX #27503\ufffd",
-    "hostname_parsed": "91.206.14.17:27503",
+    "fpd": "206",
+    "hostname": "QW.IRC.AX KTX:28503 (oeks vs. 1)\ufffd",
+    "hostname_parsed": "qw.irc.ax:28503",
     "ktxver": "1.41-dev",
     "map": "dm4",
-    "matchtag": "duel",
-    "maxclients": "2",
+    "maxclients": "4",
     "maxfps": "77",
-    "maxspectators": "10",
+    "maxspectators": "6",
     "pm_ktjump": "1",
-    "serverdemo": "duel_kolob_vs_zepp[dm4]110622-1558.mvd",
-    "status": "6 min left",
+    "serverdemo": "2on2_oeks_vs_1[dm4]220612-1307.mvd",
+    "status": "8 min left",
     "sv_antilag": "2",
+    "teamplay": "2",
     "timelimit": "10"
   },
-  "QtvStream": {
-    "Title": "Gladius SPB QTV (4)",
-    "Url": "4@91.206.14.17:28000",
-    "Id": 4,
-    "Address": "91.206.14.17:28000",
-    "SpectatorNames": [
-      "twitch.tv/vikpe"
-    ],
-    "SpectatorCount": 1
+  "qtv_stream": {
+    "title": "QW.IRC.AX KTX Qtv (3)",
+    "url": "3@46.227.68.148:28000",
+    "id": 3,
+    "address": "46.227.68.148:28000",
+    "spectator_names": [],
+    "spectator_count": 0
   },
-  "Geo": {
-    "CC": "RU",
-    "Country": "Russia",
-    "Region": "Europe",
-    "City": "St Petersburg",
-    "Coordinates": [59.9311, 30.3609]
+  "geo": {
+    "cc": "SE",
+    "country": "Sweden",
+    "region": "Europe",
+    "city": "Hagersten",
+    "coordinates": [
+      59.2885,
+      17.9612
+    ]
   },
-  "Type": "mvdsv"
+  "type": "mvdsv"
 }
 ```
-
-## Download
-
-See [releases](https://github.com/vikpe/serverstat-cli/releases) for downloads.
 
 ## See also
 
