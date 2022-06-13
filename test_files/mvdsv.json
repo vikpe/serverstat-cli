@@ -2,7 +2,10 @@
   "address": ":8000",
   "mode": "ffa",
   "title": "ffa [dm2]",
-  "status": "Standby",
+  "status": {
+    "name": "Standby",
+    "description": "Waiting for players to ready up"
+  },
   "time": {
     "elapsed": 0,
     "total": 0,
