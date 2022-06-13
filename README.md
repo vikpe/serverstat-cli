@@ -18,7 +18,10 @@ See [releases](https://github.com/vikpe/serverstat-cli/releases) for downloads.
   "address": "qw.irc.ax:28503",
   "mode": "2on2",
   "title": "2on2: 1 (HoLy., NinJaA) vs oeks (nig, trl) [dm4]",
-  "status": "Started",
+  "status": {
+    "name": "Started",
+    "description": "8 min left"
+  },
   "time": {
     "elapsed": 2,
     "total": 10,
