@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/stretchr/testify v1.7.1
 	github.com/urfave/cli/v2 v2.8.1
-	github.com/vikpe/serverstat v0.1.60
+	github.com/vikpe/serverstat v0.1.62
 	github.com/vikpe/udphelper v0.1.3
 )
 
@@ -24,7 +24,7 @@ require (
 	github.com/vikpe/udpclient v0.1.3 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e // indirect
-	golang.org/x/exp v0.0.0-20220609121020-a51bd0440498 // indirect
+	golang.org/x/exp v0.0.0-20220613132600-b0d781184e0d // indirect
 	golang.org/x/sys v0.0.0-20220610221304-9f5ed59c137d // indirect
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
