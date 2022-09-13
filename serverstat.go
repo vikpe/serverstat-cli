@@ -24,7 +24,7 @@ Example:   {{.Name}} qw.foppa.dk:27501
 		Version:     "__VERSION__", // updated during build workflow
 		Action: func(c *cli.Context) error {
 			serverAddress := c.Args().First()
-			server, err := serverstat.GetInfo(serverAddress)
+			server, err := serverstat.NewClient().GetInfo(serverAddress)
 
 			if err != nil {
 				return err
