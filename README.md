@@ -4,7 +4,7 @@
 Get info from QuakeWorld servers.
 
   Usage:   serverstat <address>
-Example:   serverstat qw.foppa.dk:27501
+Example:   serverstat qw.irc.ax:28503
 ```
 
 ## Download
