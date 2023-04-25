@@ -14,7 +14,7 @@ func run(args []string) int {
 {{.Description}}
 
   Usage:   {{.UsageText}}
-Example:   {{.Name}} qw.foppa.dk:27501
+Example:   {{.Name}} quake.se:28501
 `
 
 	app := &cli.App{
