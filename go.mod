@@ -1,6 +1,6 @@
 module serverstat
 
-go 1.18
+go 1.20
 
 require (
 	github.com/stretchr/testify v1.8.2
@@ -22,12 +22,12 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/ssoroka/slice v0.0.0-20220402005549-78f0cea3df8b // indirect
 	github.com/valyala/fastjson v1.6.4 // indirect
-	github.com/vikpe/qw-hub-api v0.2.1 // indirect
+	github.com/vikpe/qw-hub-api v0.2.2 // indirect
 	github.com/vikpe/udpclient v0.2.1 // indirect
 	github.com/vikpe/wildcard v0.1.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	golang.org/x/crypto v0.8.0 // indirect
-	golang.org/x/exp v0.0.0-20230321023759-10a507213a29 // indirect
+	golang.org/x/exp v0.0.0-20230425010034-47ecfdc1ba53 // indirect
 	golang.org/x/sys v0.7.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
