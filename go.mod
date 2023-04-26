@@ -5,8 +5,8 @@ go 1.20
 require (
 	github.com/stretchr/testify v1.8.2
 	github.com/urfave/cli/v2 v2.25.1
-	github.com/vikpe/serverstat v0.3.5
-	github.com/vikpe/udphelper v0.1.3
+	github.com/vikpe/serverstat v1.0.2
+	github.com/vikpe/udphelper v1.0.1
 )
 
 require (
@@ -23,7 +23,7 @@ require (
 	github.com/ssoroka/slice v0.0.0-20220402005549-78f0cea3df8b // indirect
 	github.com/valyala/fastjson v1.6.4 // indirect
 	github.com/vikpe/qw-hub-api v0.2.2 // indirect
-	github.com/vikpe/udpclient v0.2.1 // indirect
+	github.com/vikpe/udpclient v1.0.0 // indirect
 	github.com/vikpe/wildcard v0.1.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	golang.org/x/crypto v0.8.0 // indirect
