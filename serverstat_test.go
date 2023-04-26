@@ -49,7 +49,7 @@ func TestHelp(t *testing.T) {
 Get info from QuakeWorld servers.
 
   Usage:   serverstat <address>
-Example:   serverstat qw.foppa.dk:27501
+Example:   serverstat quake.se:28501
 `
 
 	t.Run("No args", func(t *testing.T) {
